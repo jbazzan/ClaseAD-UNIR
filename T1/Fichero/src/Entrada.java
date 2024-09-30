@@ -1,7 +1,6 @@
-import controller.GestorFicheros;
-
-import java.io.File;
-import java.io.IOException;
+import controller.GestorFicherosConjunto;
+import controller.GestorFicherosEscritura;
+import controller.GestorFicherosLectura;
 
 public class Entrada {
 
@@ -33,12 +32,19 @@ public class Entrada {
 //            }
 //        }
 
+            // USAMOS LA CLASE GestorFicheosLectura
+//        GestorFicherosLectura gestorFicherosLectura = new GestorFicherosLectura();
+////        gestorFicheros.lecturaDirectorios("src/resources/directorio");
+////        gestorFicheros.lecturaRecursiva("src/resources/directorio");
+//        gestorFicherosLectura.lecturaTextoPlano("src/resources/ficheros/lectura.txt");
 
-        GestorFicheros gestorFicheros = new GestorFicheros();
-//        gestorFicheros.lecturaDirectorios("src/resources/directorio");
-//        gestorFicheros.lecturaRecursiva("src/resources/directorio");
-        gestorFicheros.lecturaTextoPlano("src/resources/ficheros/lectura.txt");
+        // Usamos la clase GestorFicherosEscritura
 
+//        GestorFicherosEscritura gestorFicherosEscritura = new GestorFicherosEscritura();
+//        gestorFicherosEscritura.escribirFichero("src/resources/ficheros/escritura.txt");
+
+        GestorFicherosConjunto gestorFicherosConjunto = new GestorFicherosConjunto();
+        gestorFicherosConjunto.lecturaEscritura("src/resources/ficheros/cifrado.txt");
 
 
     }
